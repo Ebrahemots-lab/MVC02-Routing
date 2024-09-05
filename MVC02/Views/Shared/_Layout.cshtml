@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title> 
+</head>
+<body>
+    @* Start NavBar *@
+    <nav class="m-5">
+        <center>
+            <a class="btn btn-primary" href="/Home/Index">Home</a>
+            <a class="btn btn-secondary" href="/Home/AboutUs">AboutUs</a>
+
+            <a class="btn btn-success" href="/Account/Login">Login</a>
+            <a class="btn btn-danger" href="/Account/Rigester">Rigester</a>
+
+        </center>
+    </nav>
+    @* End NavBar *@
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    @*   Start Footer *@
+
+    <footer>
+        <center>
+            <p>All Right Recived Ebrahem Ashraf &copy; @DateTime.Now.Year</p>
+        </center>
+    </footer>
+
+    @* End Footer *@
+
+</body>
+</html>
